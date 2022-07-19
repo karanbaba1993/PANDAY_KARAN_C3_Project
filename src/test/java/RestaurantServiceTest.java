@@ -25,17 +25,7 @@ class RestaurantServiceTest {
 
     
     
-    @Test
-    public void get_order_cost_based_on_the_items_selected() {
-    	List names = new ArrayList();
-                List<Item> items =          restaurant.getMenu();
-                for(Item item : items) {
-                	names.add(item.getName());
-                }
-    	  assertEquals(388, service.getTotalOrderCost(names));              
-    	     
-    	
-    }
+ 
 
 
     //>>>>>>>>>>>>>>>>>>>>>>SEARCHING<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<

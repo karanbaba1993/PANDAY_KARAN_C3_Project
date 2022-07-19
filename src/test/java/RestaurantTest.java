@@ -2,6 +2,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -20,6 +22,17 @@ class RestaurantTest {
 
     }
     
+    @Test
+    public void get_order_cost_based_on_the_items_selected() {
+    	List names = new ArrayList();
+                List<Item> items =          restaurant.getMenu();
+                for(Item item : items) {
+                	names.add(item.getName());
+                }
+    	  assertEquals(388, restaurant.getTotalOrderCost(names));              
+    	     
+    	
+    }
 
     //>>>>>>>>>>>>>>>>>>>>>>>>>OPEN/CLOSED<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     //-------FOR THE 2 TESTS BELOW, YOU MAY USE THE CONCEPT OF MOCKING, IF YOU RUN INTO ANY TROUBLE
