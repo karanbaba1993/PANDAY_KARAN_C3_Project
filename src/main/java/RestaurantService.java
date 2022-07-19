@@ -36,4 +36,8 @@ public class RestaurantService {
     public List<Restaurant> getRestaurants() {
         return restaurants;
     }
+    
+    public double getTotalOrderCost(List<Item> items) {
+    	return 0;
+    }
 }

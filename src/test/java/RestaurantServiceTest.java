@@ -22,6 +22,15 @@ class RestaurantServiceTest {
     	
     }
 
+    
+    
+    @Test
+    public void get_order_cost_based_on_the_items_selected() {
+    	   assertEquals(388, service.getTotalOrderCost(restaurant.getMenu()));              
+    	     
+    	
+    }
+
 
     //>>>>>>>>>>>>>>>>>>>>>>SEARCHING<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     @Test
@@ -41,7 +50,9 @@ class RestaurantServiceTest {
     
  
     //<<<<<<<<<<<<<<<<<<<<SEARCHING>>>>>>>>>>>>>>>>>>>>>>>>>>
-
+    
+    
+  
 
 
 
@@ -71,4 +82,8 @@ class RestaurantServiceTest {
         assertEquals(initialNumberOfRestaurants + 1,service.getRestaurants().size());
     }
     //<<<<<<<<<<<<<<<<<<<<ADMIN: ADDING & REMOVING RESTAURANTS>>>>>>>>>>>>>>>>>>>>>>>>>>
+    
+    
+    
 }
+
