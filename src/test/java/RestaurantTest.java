@@ -32,7 +32,7 @@ class RestaurantTest {
         for (Item item : items) {
             names.add(item.getName());
         }
-        assertEquals(388, 400);
+         assertEquals(388, restaurant.getTotalOrderCost(names));
 
     }
     @Test
