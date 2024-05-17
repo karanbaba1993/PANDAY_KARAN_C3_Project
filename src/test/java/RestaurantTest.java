@@ -23,6 +23,18 @@ class RestaurantTest {
 
     }
 
+// new test method to calculate order cost based on items
+
+    @Test
+    public void get_order_cost_based_on_the_items_selected() {
+        List names = new ArrayList();
+        List<Item> items = restaurant.getMenu();
+        for (Item item : items) {
+            names.add(item.getName());
+        }
+        assertEquals(388, 400);
+
+    }
     @Test
     public void is_restaurant_open_should_return_true_if_time_is_between_opening_and_closing_time() {
         //WRITE UNIT TEST CASE HERE
